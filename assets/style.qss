@@ -1,0 +1,257 @@
+* {
+    font-family: "Microsoft YaHei", "Noto Sans CJK SC", "DejaVu Sans";
+    font-size: 13px;
+    color: #D8F2FF;
+}
+
+QMainWindow, QWidget {
+    background-color: #050D1B;
+}
+
+QToolTip {
+    background: #0C203B;
+    color: #D8F2FF;
+    border: 1px solid #244C70;
+    padding: 5px;
+}
+
+#TopBar {
+    background: qlineargradient(
+        x1:0, y1:0, x2:1, y2:0,
+        stop:0 #071426,
+        stop:0.55 #0A1D34,
+        stop:1 #123D5B
+    );
+    border-bottom: 1px solid #244C70;
+}
+
+#Brand {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #E4F8FF;
+}
+
+#Clock {
+    font-size: 14px;
+    color: #9FDFFF;
+}
+
+#SideBar {
+    background-color: #071426;
+    border-right: 1px solid #173A58;
+}
+
+#PageStack {
+    background-color: #050D1B;
+}
+
+#NavButton {
+    text-align: left;
+    padding: 12px 14px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #82AFC9;
+    background: transparent;
+}
+
+#NavButton:hover {
+    color: #D8F2FF;
+    border: 1px solid #244C70;
+    background: #0A1D34;
+}
+
+#NavButton:checked {
+    color: #65D9FF;
+    border: 1px solid #2D6A8E;
+    background: #0C203B;
+}
+
+#PageTitle {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #D8F2FF;
+}
+
+#StatusChip {
+    color: #65D9FF;
+    background: rgba(14, 50, 78, 180);
+    border: 1px solid #2C6486;
+    border-radius: 4px;
+    padding: 6px 10px;
+}
+
+#SectionFrame {
+    background-color: rgba(8, 24, 45, 210);
+    border: 1px solid #244C70;
+    border-radius: 7px;
+}
+
+#SectionTitle {
+    color: #8CCDEB;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#MetricCard {
+    min-height: 76px;
+    background-color: rgba(11, 31, 56, 220);
+    border: 1px solid #244C70;
+    border-radius: 6px;
+}
+
+#MetricCard:hover {
+    border: 1px solid #3B85AA;
+    background-color: rgba(13, 39, 68, 235);
+}
+
+#MetricTitle {
+    color: #7FAAC5;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+#MetricValue {
+    color: #BDEFFF;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+#MetricSubtitle, #SmallMuted {
+    color: #6D94AC;
+    font-size: 10px;
+}
+
+#CoreUsage {
+    background-color: #091A30;
+    border: 1px solid #1D4666;
+    border-radius: 5px;
+}
+
+#CoreName {
+    color: #7FAAC5;
+    font-size: 10px;
+}
+
+#CoreValue, #ClassCount {
+    color: #65D9FF;
+    font-weight: 700;
+}
+
+#VideoDisplay {
+    background-color: #020814;
+    border: 1px solid #2C5A7B;
+    color: #6D94AC;
+}
+
+QPushButton {
+    min-height: 34px;
+    padding: 0 16px;
+    border: 1px solid #2A5878;
+    border-radius: 4px;
+    background-color: #0B203A;
+    color: #B8DDEC;
+}
+
+QPushButton:hover {
+    border-color: #65D9FF;
+    color: #E8FAFF;
+    background-color: #10304E;
+}
+
+QPushButton:pressed {
+    background-color: #0A172A;
+}
+
+#PrimaryButton {
+    color: #06111F;
+    font-weight: 700;
+    border: 1px solid #65D9FF;
+    background-color: #65D9FF;
+}
+
+#PrimaryButton:hover {
+    background-color: #8AE5FF;
+}
+
+QComboBox, QLineEdit, QSpinBox, QDoubleSpinBox {
+    min-height: 32px;
+    padding: 0 8px;
+    background-color: #091A30;
+    border: 1px solid #285777;
+    border-radius: 4px;
+    selection-background-color: #245E7C;
+}
+
+QComboBox::drop-down {
+    border: 0;
+    width: 24px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #091A30;
+    border: 1px solid #2A5878;
+    selection-background-color: #174567;
+}
+
+QProgressBar {
+    background-color: #17344D;
+    border: 0;
+    border-radius: 3px;
+}
+
+QProgressBar::chunk {
+    background-color: #65D9FF;
+    border-radius: 3px;
+}
+
+QSlider::groove:horizontal {
+    height: 5px;
+    background: #17344D;
+    border-radius: 2px;
+}
+
+QSlider::handle:horizontal {
+    width: 14px;
+    margin: -5px 0;
+    border-radius: 7px;
+    background: #65D9FF;
+}
+
+QTableWidget, QListWidget {
+    background-color: #071426;
+    alternate-background-color: #091A30;
+    border: 1px solid #244C70;
+    gridline-color: #17344D;
+    selection-background-color: #174567;
+}
+
+QHeaderView::section {
+    background-color: #0C203B;
+    color: #8CCDEB;
+    padding: 9px;
+    border: 0;
+    border-right: 1px solid #244C70;
+    border-bottom: 1px solid #244C70;
+}
+
+QGroupBox {
+    border: 1px solid #244C70;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding: 16px 12px 12px 12px;
+    background-color: #08182D;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    left: 12px;
+    padding: 0 6px;
+    color: #8CCDEB;
+}
+
+QCheckBox {
+    color: #A9CEDF;
+}

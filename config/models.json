@@ -1,0 +1,90 @@
+{
+  "models": [
+    {
+      "key": "chip",
+      "name": "芯片缺陷检测",
+      "display_name": "芯片缺陷 best_chip",
+      "path": "./rknnModel/best_chip.rknn",
+      "classes": [
+        "Contamination",
+        "Foreign_Material",
+        "Mark_defect",
+        "bump_defect",
+        "pad_defect",
+        "scratch"
+      ],
+      "input_size": [
+        640,
+        640
+      ],
+      "tpes": 4
+    },
+    {
+      "key": "wafer",
+      "name": "晶圆缺陷检测",
+      "display_name": "晶圆缺陷 best_jingyuan",
+      "path": "./rknnModel/best_jingyuan.rknn",
+      "classes": [
+        "crease",
+        "scratch"
+      ],
+      "input_size": [
+        640,
+        640
+      ],
+      "tpes": 4
+    },
+    {
+      "key": "silicon",
+      "name": "硅基缺陷检测",
+      "display_name": "硅基缺陷 best_guiji",
+      "path": "./rknnModel/best_guiji.rknn",
+      "classes": [
+        "defect"
+      ],
+      "input_size": [
+        640,
+        640
+      ],
+      "tpes": 4
+    }
+  ],
+  "camera": {
+    "device": "/dev/video12",
+    "width": 1920,
+    "height": 1080
+  },
+  "thresholds": {
+    "confidence": 0.45,
+    "nms": 0.45,
+    "cpu_warning": 75,
+    "npu_warning": 80,
+    "memory_warning": 85,
+    "disk_warning": 90,
+    "fps_warning": 15
+  },
+  "runtime": {
+    "auto_start": false,
+    "default_model": "chip"
+  },
+  "storage": {
+    "auto_save_on_defect": false,
+    "snapshot_dir": "data/snapshots"
+  },
+  "resource_paths": {
+    "npu_load_total": "/sys/class/devfreq/fdab0000.npu/load",
+    "npu_freq": "/sys/class/devfreq/fdab0000.npu/cur_freq",
+    "npu_temp": "/sys/class/thermal/thermal_zone6/temp",
+    "npu_core_loads": [
+      "",
+      "",
+      ""
+    ],
+    "npu_core_temps": [
+      "",
+      "",
+      ""
+    ],
+    "rknpu_debug_load": "/sys/kernel/debug/rknpu/load"
+  }
+}
